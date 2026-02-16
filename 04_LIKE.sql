@@ -1,0 +1,10 @@
+SELECT name FROM land WHERE name LIKE 'A%';
+SELECT name FROM land WHERE name LIKE '%A';
+SELECT name FROM land WHERE name LIKE '%A%';
+SELECT name FROM fluss WHERE name LIKE '___';
+SELECT name FROM fluss WHERE name LIKE '_r%';
+SELECT name FROM fluss WHERE name LIKE '__m____';
+SELECT name FROM kontinent WHERE name LIKE '_______%';
+SELECT name, meer FROM fluss WHERE name LIKE 'O%' AND meer LIKE 'O%';
+SELECT name FROM land WHERE name LIKE '% %' OR name LIKE '%-%';
+SELECT name, landesteil, einwohner FROM ort WHERE landesteil IS NOT NULL AND einwohner > 1e6 AND name LIKE 'BE%';
